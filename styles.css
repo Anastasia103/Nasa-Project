@@ -1,3 +1,92 @@
 body {
-    background-color: aquamarine;
+    background-color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div.nasa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 850px;
+    height: 450px;
+    
+}
+
+div.nasa::before {
+    content: "";
+    position: absolute;
+    width: 850px;
+    height: 450px;
+    z-index: -1;
+    background: url("https://i.pinimg.com/736x/69/e8/be/69e8bed022ab7ca8c254636373bc41b6.jpg") 0 0 repeat;
+    background-size: cover;
+    transform: scaleY(-1);
+}
+h1 {
+   color: white;
+   text-align: center;
+   font-size: 95px;
+}
+.extra-info {
+    display: flex;
+    justify-content: space-between;
+    height: 324px;
+    width: 810px;
+    background-color:#e6e6e6;
+    margin-top: 20px;
+    padding:  10px 20px;
+}
+
+h2 {
+    font-weight: bolder;
+    text-align: left;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    line-height: 1.5;
+}
+ul, p, form, label {
+    padding-top: 10px;
+    color: #717171;
+}
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+p {
+    line-height: 1.5;
+}
+  
+.input-form {
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#Name.form-control {
+    display: block;
+}
+
+#Message.form-control {
+    display: block;
+    height: 60px;
+
+}
+#Message.form-control, #Name.form-control {
+margin: 5px 20px 5px 0px;
+border-color: transparent;
+}
+button {
+    border: transparent;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 85px;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bold;
 }
